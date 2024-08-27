@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 工程化</title>
+    <link rel="shortcut icon" href="code.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/edit.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__main">
+        <div class="wrapper__main_layout">
+          <div class="wrapper__main_layout-content">
+            <div class="wrapper-left">
+              <div class="wrapper-left_bar">
+                <div class="wrapper-left_bar-home" onclick="location.href='/'">
+                  <svg
+                    t="1724509753486"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="13815"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M579.264 106.88l394.986667 353.557333a21.205333 21.205333 0 0 1-14.144 37.034667h-78.933334v356.330667A84.864 84.864 0 0 1 796.309333 938.666667H249.024a84.864 84.864 0 0 1-84.864-84.864V497.472h-78.933333a21.205333 21.205333 0 0 1-14.144-37.034667L466.069333 106.88a84.864 84.864 0 0 1 113.194667 0z m-77.824 87.637333l-247.658667 221.653334v413.034666c0 11.733333 9.514667 21.226667 21.226667 21.226667h495.317333c11.733333 0 21.226667-9.514667 21.226667-21.226667V416.149333l-247.68-221.653333a31.829333 31.829333 0 0 0-42.432 0z m156.373333 479.424a44.117333 44.117333 0 0 1 0 88.234667h-270.293333a44.117333 44.117333 0 0 1 0-88.234667h270.293333z"
+                      fill="currentColor"
+                      p-id="13816"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div
+                  class="wrapper-left_bar-preview"
+                  onclick="window.open('./articles/01 工程化')"
+                >
+                  <svg
+                    t="1724509963924"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="19549"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M170.666667 640a42.666667 42.666667 0 0 1 42.666666 42.666667v128h128a42.666667 42.666667 0 0 1 0 85.333333H213.333333a85.333333 85.333333 0 0 1-85.333333-85.333333v-128a42.666667 42.666667 0 0 1 42.666667-42.666667z m682.666666 0a42.666667 42.666667 0 0 1 42.666667 42.666667v128a85.333333 85.333333 0 0 1-85.333333 85.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128v-128a42.666667 42.666667 0 0 1 42.666666-42.666667z m-213.333333-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333334v170.666666a85.333333 85.333333 0 0 1-85.333333 85.333334H384a85.333333 85.333333 0 0 1-85.333333-85.333334v-170.666666a85.333333 85.333333 0 0 1 85.333333-85.333334h256z m0 85.333334H384v170.666666h256v-170.666666z m170.666667-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333333v128a42.666667 42.666667 0 0 1-85.333333 0V213.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128zM341.333333 128a42.666667 42.666667 0 1 1 0 85.333333H213.333333v128a42.666667 42.666667 0 1 1-85.333333 0V213.333333a85.333333 85.333333 0 0 1 85.333333-85.333333h128z"
+                      fill="currentColor"
+                      p-id="19550"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <ul><li data-id="1" data-path="01 最新 ESLint 9.0 + vue3.0 + TS 配置.md">01 最新 ESLint 9.0 + vue3.0 + TS 配置.md</li><li data-id="2" data-path="02 检查前端项目和 node 项目中未被使用的依赖包.md">02 检查前端项目和 node 项目中未被使用的依赖包.md</li></ul>
+            </div>
+            <div class="wrapper-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <pre id="pre" style="display: none">
+      {
+  &#34;01 最新 ESLint 9.0 + vue3.0 + TS 配置.md&#34;: &#34;&lt;h1&gt;最新 ESLint 9.0 + vue3.0 + TS 配置&lt;/h1&gt;\n&lt;h3&gt;package.json 文件&lt;/h3&gt;\n&lt;p&gt;eslint 相关的包&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;@eslint/js&lt;/li&gt;\n&lt;li&gt;eslint&lt;/li&gt;\n&lt;li&gt;eslint-plugin-vue&lt;/li&gt;\n&lt;li&gt;typescript-eslint&lt;/li&gt;\n&lt;li&gt;vite-plugin-eslint&lt;/li&gt;\n&lt;/ol&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-json\&#34;&gt;{\n  &amp;quot;name&amp;quot;: &amp;quot;mzong-books&amp;quot;,\n  &amp;quot;private&amp;quot;: true,\n  &amp;quot;version&amp;quot;: &amp;quot;0.0.0&amp;quot;,\n  &amp;quot;type&amp;quot;: &amp;quot;module&amp;quot;,\n  &amp;quot;scripts&amp;quot;: {\n    &amp;quot;dev&amp;quot;: &amp;quot;vite&amp;quot;,\n    &amp;quot;build&amp;quot;: &amp;quot;vue-tsc &amp;amp;&amp;amp; vite build&amp;quot;,\n    &amp;quot;preview&amp;quot;: &amp;quot;vite preview&amp;quot;\n  },\n  &amp;quot;dependencies&amp;quot;: {\n    &amp;quot;vue&amp;quot;: &amp;quot;^3.3.11&amp;quot;\n  },\n  &amp;quot;devDependencies&amp;quot;: {\n    &amp;quot;@eslint/js&amp;quot;: &amp;quot;^9.1.1&amp;quot;, // eslint官方包\n    &amp;quot;@types/node&amp;quot;: &amp;quot;^20.10.5&amp;quot;,\n    &amp;quot;@vitejs/plugin-vue&amp;quot;: &amp;quot;^4.5.2&amp;quot;,\n    &amp;quot;eslint&amp;quot;: &amp;quot;^9.1.1&amp;quot;, // eslint官方包\n    &amp;quot;eslint-plugin-vue&amp;quot;: &amp;quot;^9.25.0&amp;quot;, // Vue.js 的官方 ESLint 插件。这个插件允许我们使用 ESLint 检查文件的`&amp;lt;template&amp;gt;`和，以及文件中的 Vue 代码。`&amp;lt;script&amp;gt;``.vue``.js`\n    &amp;quot;typescript&amp;quot;: &amp;quot;^5.2.2&amp;quot;,\n    &amp;quot;typescript-eslint&amp;quot;: &amp;quot;^7.7.1&amp;quot;, // ts-eslint解析器，使 eslint 可以解析 ts 语法\n    &amp;quot;vite&amp;quot;: &amp;quot;^5.0.8&amp;quot;,\n    &amp;quot;vite-plugin-eslint&amp;quot;: &amp;quot;^1.8.1&amp;quot;, //  用于vite启动的时候，校验eslint，会在控制台显示具体信息\n    &amp;quot;vue-tsc&amp;quot;: &amp;quot;^1.8.25&amp;quot;\n  }\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h3&gt;vite.config.ts 文件&lt;/h3&gt;\n&lt;p&gt;这里主要是引用 &lt;code&gt;vite-plugin-eslint&lt;/code&gt;，使 vite 启动的时候可以校验 eslint 信息&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;import { defineConfig } from &amp;quot;vite&amp;quot;;\nimport vue from &amp;quot;@vitejs/plugin-vue&amp;quot;;\nimport eslint from &amp;quot;vite-plugin-eslint&amp;quot;;\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  plugins: [\n    vue(),\n    {\n      // do not fail on serve (i.e. local development)\n      ...eslint({\n        failOnWarning: false,\n        failOnError: false,\n      }),\n      apply: &amp;quot;serve&amp;quot;,\n      enforce: &amp;quot;post&amp;quot;,\n    },\n  ],\n});\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h3&gt;eslint.config.js 文件&lt;/h3&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;// 引入vue模版的eslint\nimport pluginVue from &amp;quot;eslint-plugin-vue&amp;quot;;\nimport eslint from &amp;quot;@eslint/js&amp;quot;;\n// ts-eslint解析器，使 eslint 可以解析 ts 语法\nimport tseslint from &amp;quot;typescript-eslint&amp;quot;;\n// vue文件解析器\nimport vueParser from &amp;quot;vue-eslint-parser&amp;quot;;\nexport default tseslint.config({\n  // tseslint.config添加了extends扁平函数，直接用。否则是eslint9.0版本是没有extends的\n  extends: [\n    eslint.configs.recommended,\n    ...tseslint.configs.recommended,\n    ...pluginVue.configs[&amp;quot;flat/essential&amp;quot;], // vue3推荐的eslint配置\n  ],\n  languageOptions: {\n    parser: vueParser, // 使用vue解析器，这个可以识别vue文件\n    parserOptions: {\n      parser: tseslint.parser, // 在vue文件上使用ts解析器\n      sourceType: &amp;quot;module&amp;quot;,\n    },\n  },\n  rules: {\n    semi: [&amp;quot;warn&amp;quot;, &amp;quot;never&amp;quot;],\n    &amp;quot;comma-dangle&amp;quot;: [&amp;quot;error&amp;quot;, &amp;quot;never&amp;quot;],\n    &amp;quot;no-unused-vars&amp;quot;: 2,\n    &amp;quot;space-before-function-paren&amp;quot;: 0,\n    &amp;quot;generator-star-spacing&amp;quot;: &amp;quot;off&amp;quot;,\n    &amp;quot;object-curly-spacing&amp;quot;: 0, // 强制在大括号中使用一致的空格\n    &amp;quot;array-bracket-spacing&amp;quot;: 0, // 方括号\n  },\n});\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h3&gt;校验&lt;/h3&gt;\n&lt;p&gt;在组件上随便一个规则&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-html\&#34;&gt;&amp;lt;script setup lang=&amp;quot;ts&amp;quot;&amp;gt;\nimport { ref } from &amp;#39;vue&amp;#39;\nconst text = { a: 1, b: &amp;quot;2&amp;quot; }\n&amp;lt;/script&amp;gt;\n&lt;/code&gt;&lt;/pre&gt;\n&#34;,
+  &#34;02 检查前端项目和 node 项目中未被使用的依赖包.md&#34;: &#34;&lt;h1&gt;检查前端项目和 node 项目中未被使用的依赖包&lt;/h1&gt;\n&lt;p&gt;随着前端项目中使用的依赖包越来越多，而其中一部分依赖包可能并未被项目所使用，手动查找这些依赖包既耗时又繁琐。未使用的依赖包会增加项目的大小，这可能会导致下载和安装你的应用所需的时间更长。并且在构建项目时，构建工具需要处理所有的依赖包。未使用的依赖包可能会不必要地增加构建时间，特别是在大型项目中。&lt;/p&gt;\n&lt;h2&gt;编写脚本来识别未使用的依赖包&lt;/h2&gt;\n&lt;p&gt;Depcheck 是一款用于分析项目中依赖关系的工具，它可以帮助我们找出以下问题：在 package.json 中，每个依赖包如何被使用、哪些依赖包没有用处、哪些依赖包缺失。它是解决前端项目中依赖包清理问题的一个常用工具。&lt;/p&gt;\n&lt;p&gt;接下来的内容中，我们不是使用这个库，而是自己编写一个脚本来实现我们想要的功能。它主要的步骤被划分为：&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;读取根目录下的 package.json 文件。&lt;/li&gt;\n&lt;li&gt;递归遍历目录获取所有文件路径，并且跳过 excludeDirs 中指定的目录。&lt;/li&gt;\n&lt;li&gt;检查依赖是否在文件中被引用，并找到未使用的依赖。&lt;/li&gt;\n&lt;li&gt;执行检查并报告结果。&lt;/li&gt;\n&lt;/ol&gt;\n&lt;p&gt;最终代码如下所示：&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;const fs = require(&amp;quot;fs&amp;quot;);\nconst path = require(&amp;quot;path&amp;quot;);\n\nconst projectDir = path.resolve(&amp;quot;.&amp;quot;); // 当前项目目录\nconst excludeDirs = [&amp;quot;node_modules&amp;quot;, &amp;quot;.git&amp;quot;]; // 应该排除的目录\n\n// 读取并解析package.json\nfunction readPackageJson() {\n  const packageJsonPath = path.join(projectDir, &amp;quot;package.json&amp;quot;);\n  if (!fs.existsSync(packageJsonPath)) {\n    console.error(&amp;quot;package.json not found.&amp;quot;);\n    process.exit(1);\n  }\n  return JSON.parse(fs.readFileSync(packageJsonPath, &amp;quot;utf8&amp;quot;));\n}\n\n// 递归遍历目录获取所有文件路径\nfunction getAllFiles(dirPath, arrayOfFiles) {\n  const files = fs.readdirSync(dirPath);\n\n  arrayOfFiles = arrayOfFiles || [];\n\n  files.forEach(function (file) {\n    if (fs.statSync(dirPath + &amp;quot;/&amp;quot; + file).isDirectory()) {\n      if (!excludeDirs.includes(file)) {\n        arrayOfFiles = getAllFiles(dirPath + &amp;quot;/&amp;quot; + file, arrayOfFiles);\n      }\n    } else {\n      arrayOfFiles.push(path.join(dirPath, &amp;quot;/&amp;quot;, file));\n    }\n  });\n\n  return arrayOfFiles;\n}\n\n// 检查依赖是否在文件中被引用，包括动态引用\nfunction isDependencyUsed(files, dependency) {\n  const regexStaticImport = new RegExp(\n    `require\\\\([&amp;#39;&amp;quot;\\`]${dependency}[&amp;#39;&amp;quot;\\`]|from [&amp;#39;&amp;quot;\\`]${dependency}[&amp;#39;&amp;quot;\\`]`,\n    &amp;quot;i&amp;quot;\n  );\n  const regexDynamicImport = new RegExp(\n    `import\\\\([&amp;#39;&amp;quot;\\`]${dependency}[&amp;#39;&amp;quot;\\`]\\\\)`,\n    &amp;quot;i&amp;quot;\n  );\n  return files.some((file) =&amp;gt; {\n    const fileContent = fs.readFileSync(file, &amp;quot;utf8&amp;quot;);\n    return (\n      regexStaticImport.test(fileContent) ||\n      regexDynamicImport.test(fileContent)\n    );\n  });\n}\n\nfunction findUnusedDependencies() {\n  const { dependencies } = readPackageJson();\n  const allFiles = getAllFiles(projectDir);\n  const unusedDependencies = [];\n\n  Object.keys(dependencies).forEach((dependency) =&amp;gt; {\n    if (!isDependencyUsed(allFiles, dependency)) {\n      unusedDependencies.push(dependency);\n    }\n  });\n\n  return unusedDependencies;\n}\n\nconst unusedDependencies = findUnusedDependencies();\nif (unusedDependencies.length &amp;gt; 0) {\n  console.log(&amp;quot;未使用的依赖:&amp;quot;, unusedDependencies.join(&amp;quot;, &amp;quot;));\n} else {\n  console.log(&amp;quot;所有依赖都已使用。&amp;quot;);\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;运行上面的代码我们可以获取到哪些依赖包是没有被使用到的。&lt;/p&gt;\n&lt;p&gt;在上面的两个正则中，它的作用如下：&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;require 语句的使用，例如：&lt;code&gt;require(&amp;#39;dependency&amp;#39;)&lt;/code&gt;。&lt;/li&gt;\n&lt;li&gt;ES6 模块导入语句中 from 后面的部分，例如：&lt;code&gt;import something from &amp;#39;dependency&amp;#39;&lt;/code&gt;。&lt;/li&gt;\n&lt;li&gt;匹配动态 &lt;code&gt;import()&lt;/code&gt; 语法的使用，例如：&lt;code&gt;import(&amp;#39;dependency&amp;#39;)&lt;/code&gt;。&lt;/li&gt;\n&lt;/ol&gt;\n&lt;p&gt;这两个正则表达式的目的是为了在文件中找到对指定依赖的引用，无论这些引用是静态的还是动态的。&lt;/p&gt;\n&lt;p&gt;接下来我们执行一下代码，最终输出结果如下图所示：&lt;/p&gt;\n&lt;img src=\&#34;../imgs/01/01.awebp\&#34; /&gt;\n\n&lt;p&gt;这里我们可以查看到哪些内容是没有被使用到的，紧接着，我们可以再添加一行代码进行测试：&lt;/p&gt;\n&lt;img src=\&#34;../imgs/01/02.awebp\&#34; /&gt;\n\n&lt;p&gt;你可以看到，当我们添加了一个动态包导入之后，&lt;code&gt;@fastify/static&lt;/code&gt; 被从未使用的依赖中移除掉了。&lt;/p&gt;\n&#34;
+}</pre
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+    <script src="./js/edit.js"></script>
+  </body>
+</html>

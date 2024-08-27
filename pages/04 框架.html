@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04 框架</title>
+    <link rel="shortcut icon" href="code.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/edit.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__main">
+        <div class="wrapper__main_layout">
+          <div class="wrapper__main_layout-content">
+            <div class="wrapper-left">
+              <div class="wrapper-left_bar">
+                <div class="wrapper-left_bar-home" onclick="location.href='/'">
+                  <svg
+                    t="1724509753486"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="13815"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M579.264 106.88l394.986667 353.557333a21.205333 21.205333 0 0 1-14.144 37.034667h-78.933334v356.330667A84.864 84.864 0 0 1 796.309333 938.666667H249.024a84.864 84.864 0 0 1-84.864-84.864V497.472h-78.933333a21.205333 21.205333 0 0 1-14.144-37.034667L466.069333 106.88a84.864 84.864 0 0 1 113.194667 0z m-77.824 87.637333l-247.658667 221.653334v413.034666c0 11.733333 9.514667 21.226667 21.226667 21.226667h495.317333c11.733333 0 21.226667-9.514667 21.226667-21.226667V416.149333l-247.68-221.653333a31.829333 31.829333 0 0 0-42.432 0z m156.373333 479.424a44.117333 44.117333 0 0 1 0 88.234667h-270.293333a44.117333 44.117333 0 0 1 0-88.234667h270.293333z"
+                      fill="currentColor"
+                      p-id="13816"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div
+                  class="wrapper-left_bar-preview"
+                  onclick="window.open('./articles/04 框架')"
+                >
+                  <svg
+                    t="1724509963924"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="19549"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M170.666667 640a42.666667 42.666667 0 0 1 42.666666 42.666667v128h128a42.666667 42.666667 0 0 1 0 85.333333H213.333333a85.333333 85.333333 0 0 1-85.333333-85.333333v-128a42.666667 42.666667 0 0 1 42.666667-42.666667z m682.666666 0a42.666667 42.666667 0 0 1 42.666667 42.666667v128a85.333333 85.333333 0 0 1-85.333333 85.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128v-128a42.666667 42.666667 0 0 1 42.666666-42.666667z m-213.333333-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333334v170.666666a85.333333 85.333333 0 0 1-85.333333 85.333334H384a85.333333 85.333333 0 0 1-85.333333-85.333334v-170.666666a85.333333 85.333333 0 0 1 85.333333-85.333334h256z m0 85.333334H384v170.666666h256v-170.666666z m170.666667-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333333v128a42.666667 42.666667 0 0 1-85.333333 0V213.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128zM341.333333 128a42.666667 42.666667 0 1 1 0 85.333333H213.333333v128a42.666667 42.666667 0 1 1-85.333333 0V213.333333a85.333333 85.333333 0 0 1 85.333333-85.333333h128z"
+                      fill="currentColor"
+                      p-id="19550"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <ul><li data-id="11" data-path="01 探索 Svelte.js.md">01 探索 Svelte.js.md</li></ul>
+            </div>
+            <div class="wrapper-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <pre id="pre" style="display: none">
+      {
+  &#34;01 探索 Svelte.js.md&#34;: &#34;&lt;h1&gt;探索 Svelte.js：前端的“瘦身”革命&lt;/h1&gt;\n&lt;p&gt;今天我们来聊聊一个在前端界掀起“瘦身”革命的框架——Svelte.js。如果你厌倦了那些臃肿的前端框架，渴望一种更轻量、更高效的解决方案，那么 Svelte.js 绝对是你的菜。现在，让我们一起深入了解 Svelte.js，它的背景故事，以及它如何改变我们的开发方式。&lt;/p&gt;\n&lt;h3&gt;什么是 Svelte.js？&lt;/h3&gt;\n&lt;p&gt;Svelte.js（简称 Svelte）是一个全新的前端框架，与 React、Vue 等传统框架不同，Svelte 采用了编译时优化策略，将你的代码转换为高效的 vanilla JavaScript，从而在运行时几乎不产生框架开销。这意味着你的应用可以更快、更轻量，同时保持出色的性能。&lt;/p&gt;\n&lt;h3&gt;Svelte.js 的背景&lt;/h3&gt;\n&lt;p&gt;Svelte.js 由 Rich Harris 在 2016 年创建。Rich Harris 是一位经验丰富的开发者，同时也是《纽约时报》的图形编辑。他发现现有的前端框架在性能和开发体验上存在一些不足，于是决定自己动手，创造一个全新的解决方案。Svelte 这个名字来源于“Svelte”这个词本身，意味着苗条、轻巧，非常贴切地描述了这个框架的特点。&lt;/p&gt;\n&lt;h3&gt;Svelte.js 背后的公司&lt;/h3&gt;\n&lt;p&gt;Svelte.js 是一个完全开源的项目，没有特定的公司背景。Rich Harris 最初是在个人时间开发的，后来得到了社区的广泛支持和贡献。如今，Svelte.js 由一个活跃的社区维护，包括 Rich Harris 本人和其他贡献者。&lt;/p&gt;\n&lt;h3&gt;Svelte.js 的版本差异&lt;/h3&gt;\n&lt;p&gt;Svelte.js 经历了多个版本的迭代，每个版本都带来了显著的改进和新功能。以下是一些版本之间的重要差异：&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Svelte v1.x：这是 Svelte 的首个稳定版本，主要功能包括组件化、状态管理和编译时优化。&lt;/li&gt;\n&lt;li&gt;Svelte v2.x：在这一版本中，Svelte 引入了更先进的编译器，优化了性能，并增加了对动画和过渡的支持。&lt;/li&gt;\n&lt;li&gt;Svelte v3.x：这个版本是 Svelte 的重大升级，彻底改变了 API，使其更加简洁和直观，同时进一步提升了开发体验。&lt;/li&gt;\n&lt;li&gt;Svelte v4.x（最新）：最新版本继续优化编译器，提升了性能，并增加了更多的内置功能，如样式作用域和更好的 TypeScript 支持。&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;Svelte.js 的使用方式&lt;/h3&gt;\n&lt;p&gt;Svelte.js 的安装和使用非常简单，你只需要安装它并写几行代码就能创建一个组件。以下是一个简单的示例：&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;// 安装Svelte\n// npm install svelte\n\n// 创建一个Svelte组件\n&amp;lt;script&amp;gt;\n  let name = &amp;#39;world&amp;#39;;\n&amp;lt;/script&amp;gt;\n\n&amp;lt;style&amp;gt;\n  h1 {\n    color: blue;\n  }\n&amp;lt;/style&amp;gt;\n\n&amp;lt;h1&amp;gt;Hello {name}!&amp;lt;/h1&amp;gt;\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h3&gt;Svelte.js 的优劣势&lt;/h3&gt;\n&lt;p&gt;优势：&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;性能卓越：Svelte 在编译时进行优化，运行时几乎不产生框架开销，性能远超传统框架。&lt;/li&gt;\n&lt;li&gt;轻量级：生成的代码非常轻量，减少了应用的加载时间和运行时的内存占用。&lt;/li&gt;\n&lt;li&gt;开发体验好：Svelte 的 API 简洁直观，学习曲线平缓，让开发者能够快速上手。&lt;/li&gt;\n&lt;li&gt;真正的响应式：Svelte 的响应式系统非常直观，不需要复杂的钩子函数，状态变化自动更新视图。&lt;/li&gt;\n&lt;/ol&gt;\n&lt;p&gt;劣势：&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;生态系统较小：相比于 React 和 Vue，Svelte 的生态系统还不够成熟，插件和工具相对较少。&lt;/li&gt;\n&lt;li&gt;社区规模：虽然社区活跃，但与主流框架相比，Svelte 的社区规模较小，遇到问题时可能需要更多自力更生。&lt;/li&gt;\n&lt;li&gt;编译依赖：Svelte 依赖于编译步骤，这意味着你需要一个构建工具来使用它，对于小型项目可能显得有些繁琐。&lt;/li&gt;\n&lt;/ol&gt;\n&lt;h3&gt;使用 Svelte.js 需要注意的地方&lt;/h3&gt;\n&lt;ol&gt;\n&lt;li&gt;构建工具：确保你有一个合适的构建工具（如 Rollup 或 Webpack）来编译 Svelte 代码。&lt;/li&gt;\n&lt;li&gt;生态系统：在选择第三方库和插件时，要注意它们是否支持 Svelte，或者是否有 Svelte 的替代品。&lt;/li&gt;\n&lt;li&gt;性能监控：虽然 Svelte 性能出色，但在大型应用中仍需进行性能监控，确保最佳的用户体验。&lt;/li&gt;\n&lt;/ol&gt;\n&lt;h3&gt;哪些产品软件使用了 Svelte.js？&lt;/h3&gt;\n&lt;p&gt;Svelte.js 已经被许多项目和公司采用，以下是一些知名的使用 Svelte.js 的项目：&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;The New York Times：作为 Svelte.js 的创建者所在的公司，《纽约时报》在其一些项目中使用了 Svelte.js。&lt;/li&gt;\n&lt;li&gt;IBM：在某些内部项目中，IBM 采用了 Svelte.js 来提升开发效率和性能。&lt;/li&gt;\n&lt;li&gt;Cisco：在开发一些 Web 应用时，Cisco 选择了 Svelte.js 作为前端框架。&lt;/li&gt;\n&lt;li&gt;1Password：知名的密码管理工具 1Password 在其新版本中使用了 Svelte.js。&lt;/li&gt;\n&lt;li&gt;GoDaddy：作为全球知名的域名注册商，GoDaddy 在其一些内部工具中采用了 Svelte.js。&lt;/li&gt;\n&lt;/ol&gt;\n&lt;h3&gt;结论&lt;/h3&gt;\n&lt;p&gt;总的来说，Svelte.js 是一个非常优秀的前端框架，它的编译时优化、轻量级和出色的性能让它在前端开发中脱颖而出。对于追求极致性能和简洁代码的开发者来说，Svelte.js 无疑是一个绝佳的选择。如果你厌倦了传统框架的臃肿，渴望一种更轻量、更高效的解决方案，不妨试试 Svelte.js 吧！&lt;/p&gt;\n&#34;
+}</pre
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+    <script src="./js/edit.js"></script>
+  </body>
+</html>

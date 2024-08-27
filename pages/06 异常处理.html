@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>06 异常处理</title>
+    <link rel="shortcut icon" href="code.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/edit.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__main">
+        <div class="wrapper__main_layout">
+          <div class="wrapper__main_layout-content">
+            <div class="wrapper-left">
+              <div class="wrapper-left_bar">
+                <div class="wrapper-left_bar-home" onclick="location.href='/'">
+                  <svg
+                    t="1724509753486"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="13815"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M579.264 106.88l394.986667 353.557333a21.205333 21.205333 0 0 1-14.144 37.034667h-78.933334v356.330667A84.864 84.864 0 0 1 796.309333 938.666667H249.024a84.864 84.864 0 0 1-84.864-84.864V497.472h-78.933333a21.205333 21.205333 0 0 1-14.144-37.034667L466.069333 106.88a84.864 84.864 0 0 1 113.194667 0z m-77.824 87.637333l-247.658667 221.653334v413.034666c0 11.733333 9.514667 21.226667 21.226667 21.226667h495.317333c11.733333 0 21.226667-9.514667 21.226667-21.226667V416.149333l-247.68-221.653333a31.829333 31.829333 0 0 0-42.432 0z m156.373333 479.424a44.117333 44.117333 0 0 1 0 88.234667h-270.293333a44.117333 44.117333 0 0 1 0-88.234667h270.293333z"
+                      fill="currentColor"
+                      p-id="13816"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div
+                  class="wrapper-left_bar-preview"
+                  onclick="window.open('./articles/06 异常处理')"
+                >
+                  <svg
+                    t="1724509963924"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="19549"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M170.666667 640a42.666667 42.666667 0 0 1 42.666666 42.666667v128h128a42.666667 42.666667 0 0 1 0 85.333333H213.333333a85.333333 85.333333 0 0 1-85.333333-85.333333v-128a42.666667 42.666667 0 0 1 42.666667-42.666667z m682.666666 0a42.666667 42.666667 0 0 1 42.666667 42.666667v128a85.333333 85.333333 0 0 1-85.333333 85.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128v-128a42.666667 42.666667 0 0 1 42.666666-42.666667z m-213.333333-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333334v170.666666a85.333333 85.333333 0 0 1-85.333333 85.333334H384a85.333333 85.333333 0 0 1-85.333333-85.333334v-170.666666a85.333333 85.333333 0 0 1 85.333333-85.333334h256z m0 85.333334H384v170.666666h256v-170.666666z m170.666667-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333333v128a42.666667 42.666667 0 0 1-85.333333 0V213.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128zM341.333333 128a42.666667 42.666667 0 1 1 0 85.333333H213.333333v128a42.666667 42.666667 0 1 1-85.333333 0V213.333333a85.333333 85.333333 0 0 1 85.333333-85.333333h128z"
+                      fill="currentColor"
+                      p-id="19550"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <ul></ul>
+            </div>
+            <div class="wrapper-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <pre id="pre" style="display: none">
+      {}</pre
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+    <script src="./js/edit.js"></script>
+  </body>
+</html>

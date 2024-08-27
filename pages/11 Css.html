@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11 Css</title>
+    <link rel="shortcut icon" href="code.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/edit.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__main">
+        <div class="wrapper__main_layout">
+          <div class="wrapper__main_layout-content">
+            <div class="wrapper-left">
+              <div class="wrapper-left_bar">
+                <div class="wrapper-left_bar-home" onclick="location.href='/'">
+                  <svg
+                    t="1724509753486"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="13815"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M579.264 106.88l394.986667 353.557333a21.205333 21.205333 0 0 1-14.144 37.034667h-78.933334v356.330667A84.864 84.864 0 0 1 796.309333 938.666667H249.024a84.864 84.864 0 0 1-84.864-84.864V497.472h-78.933333a21.205333 21.205333 0 0 1-14.144-37.034667L466.069333 106.88a84.864 84.864 0 0 1 113.194667 0z m-77.824 87.637333l-247.658667 221.653334v413.034666c0 11.733333 9.514667 21.226667 21.226667 21.226667h495.317333c11.733333 0 21.226667-9.514667 21.226667-21.226667V416.149333l-247.68-221.653333a31.829333 31.829333 0 0 0-42.432 0z m156.373333 479.424a44.117333 44.117333 0 0 1 0 88.234667h-270.293333a44.117333 44.117333 0 0 1 0-88.234667h270.293333z"
+                      fill="currentColor"
+                      p-id="13816"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div
+                  class="wrapper-left_bar-preview"
+                  onclick="window.open('./articles/11 Css')"
+                >
+                  <svg
+                    t="1724509963924"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="19549"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M170.666667 640a42.666667 42.666667 0 0 1 42.666666 42.666667v128h128a42.666667 42.666667 0 0 1 0 85.333333H213.333333a85.333333 85.333333 0 0 1-85.333333-85.333333v-128a42.666667 42.666667 0 0 1 42.666667-42.666667z m682.666666 0a42.666667 42.666667 0 0 1 42.666667 42.666667v128a85.333333 85.333333 0 0 1-85.333333 85.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128v-128a42.666667 42.666667 0 0 1 42.666666-42.666667z m-213.333333-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333334v170.666666a85.333333 85.333333 0 0 1-85.333333 85.333334H384a85.333333 85.333333 0 0 1-85.333333-85.333334v-170.666666a85.333333 85.333333 0 0 1 85.333333-85.333334h256z m0 85.333334H384v170.666666h256v-170.666666z m170.666667-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333333v128a42.666667 42.666667 0 0 1-85.333333 0V213.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128zM341.333333 128a42.666667 42.666667 0 1 1 0 85.333333H213.333333v128a42.666667 42.666667 0 1 1-85.333333 0V213.333333a85.333333 85.333333 0 0 1 85.333333-85.333333h128z"
+                      fill="currentColor"
+                      p-id="19550"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <ul><li data-id="21" data-path="01 纯 CSS 获取屏幕宽高.md">01 纯 CSS 获取屏幕宽高.md</li></ul>
+            </div>
+            <div class="wrapper-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <pre id="pre" style="display: none">
+      {
+  &#34;01 纯 CSS 获取屏幕宽高.md&#34;: &#34;&lt;h1&gt;不使用 JS 纯 CSS 获取屏幕宽高&lt;/h1&gt;\n&lt;p&gt;在现代前端开发中，获取屏幕的宽度和高度通常依赖于 JavaScript。然而现代 CSS 也可以获取到屏幕的宽高，通过自定义属性（CSS Variables）和一些数学函数来实现这一目标。本文将详细解析如何使用 CSS 的 &lt;code&gt;@property&lt;/code&gt; 规则和一些数学运算来获取屏幕的宽高，严格的说是获取&lt;strong&gt;视口的宽度和高度&lt;/strong&gt;。&lt;/p&gt;\n&lt;p&gt;使用 CSS 获取屏幕宽高仅是一种实现方式，部分属性和数学函数有一定的兼容性问题，所以线上环境使用需谨慎。首先来了解一些前置知识点：&lt;/p&gt;\n&lt;h2&gt;1. CSS 自定义属性&lt;/h2&gt;\n&lt;p&gt;CSS 自定义属性（也称为 CSS 变量）允许开发者在 CSS 中定义可重用的值。通过使用 var() 函数，可以在样式表的任何地方引用这些变量。自定义属性的定义通常在 &lt;code&gt;:root&lt;/code&gt; 选择器中进行，以便在整个文档中使用。&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-css\&#34;&gt;:root {\n  --shadow-hue: 180deg;\n  --spring-duration: 1.33s;\n  --canvas: 220;\n  --bg: hsl(var(--canvas), 15%, 22%);\n  --wgt: 200;\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2&gt;2. @property 规则&lt;/h2&gt;\n&lt;p&gt;&lt;code&gt;@property&lt;/code&gt; 规则是 CSS 的一项新特性，允许开发者定义自定义属性的语法、继承性和初始值。通过 @property，我们可以指定一个属性的类型和默认值。&lt;/p&gt;\n&lt;p&gt;在我们的示例中，我们定义了两个自定义属性 &lt;code&gt;--_w&lt;/code&gt; 和 &lt;code&gt;--_h&lt;/code&gt;，分别表示屏幕的宽度和高度：&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-css\&#34;&gt;@property --_w {\n  syntax: &amp;quot;&amp;lt;length&amp;gt;&amp;quot;;\n  inherits: true;\n  initial-value: 100vw;\n}\n\n@property --_h {\n  syntax: &amp;quot;&amp;lt;length&amp;gt;&amp;quot;;\n  inherits: true;\n  initial-value: 100vh;\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;code&gt;syntax: &amp;#39;&amp;lt;length&amp;gt;&amp;#39;&lt;/code&gt; 指定了属性的类型为长度。&lt;/li&gt;\n&lt;li&gt;&lt;code&gt;inherits: true&lt;/code&gt; 表示该属性可以继承。&lt;/li&gt;\n&lt;li&gt;&lt;code&gt;initial-value&lt;/code&gt; 设置了属性的初始值，分别为 100vw 和 100vh，即视口的宽度和高度。&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;3. 数学运算函数&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;code&gt;atan2(y, x)&lt;/code&gt; 函数返回从 x 轴到点 &lt;code&gt;(x, y)&lt;/code&gt; 的角度（以弧度为单位）。&lt;/li&gt;\n&lt;li&gt;&lt;code&gt;tan()&lt;/code&gt; 函数则计算给定角度的正切值。&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;4. 计算屏幕宽高&lt;/h2&gt;\n&lt;p&gt;在 &lt;code&gt;:root&lt;/code&gt; 选择器中，我们使用 &lt;code&gt;tan()&lt;/code&gt; 和 &lt;code&gt;atan2()&lt;/code&gt; 函数来计算屏幕的宽度和高度，在这里我们将 &lt;code&gt;var(--_w)&lt;/code&gt; 和 1px 作为参数传递，计算出宽度的角度。通过这种方式，我们可以将宽度和高度转换为无单位的整数值。&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-css\&#34;&gt;:root {\n  --w: tan(atan2(var(--_w), 1px));\n  --h: tan(atan2(var(--_h), 1px));\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2&gt;5. 使用 counter 显示宽高&lt;/h2&gt;\n&lt;p&gt;在 &lt;code&gt;body:before&lt;/code&gt; 伪元素中，我们使用 &lt;code&gt;counter&lt;/code&gt; 来显示计算出的宽度和高度：&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-css\&#34;&gt;body:before {\n  content: counter(w) &amp;quot;x&amp;quot; counter(h);\n  counter-reset: h var(--h) w var(--w);\n  font-size: 50px;\n  font-family: system-ui, sans-serif;\n  font-weight: 900;\n  position: fixed;\n  inset: 0;\n  width: fit-content;\n  height: fit-content;\n  margin: auto;\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;code&gt;counter-reset&lt;/code&gt; 用于初始化计数器 h 和 w，并将其值设置为 &lt;code&gt;var(--h)&lt;/code&gt; 和 &lt;code&gt;var(--w)&lt;/code&gt;。&lt;/li&gt;\n&lt;li&gt;&lt;code&gt;content: counter(w) &amp;quot;x&amp;quot; counter(h);&lt;/code&gt; 用于显示宽度和高度，格式为 宽度 x 高度。&lt;/li&gt;\n&lt;li&gt;通过设置 &lt;code&gt;position: fixed&lt;/code&gt; 和 &lt;code&gt;inset: 0&lt;/code&gt;，我们将内容居中显示在屏幕上。&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;6. 效果展示&lt;/h2&gt;\n&lt;p&gt;当页面加载时，浏览器会根据视口的实际宽度和高度计算出 &lt;code&gt;--w&lt;/code&gt; 和 &lt;code&gt;--h&lt;/code&gt; 的值，并在页面上显示出来。整个过程完全不依赖于 JavaScript。&lt;/p&gt;\n&lt;img src=\&#34;../imgs/11/01.gif\&#34; /&gt;&#34;
+}</pre
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+    <script src="./js/edit.js"></script>
+  </body>
+</html>

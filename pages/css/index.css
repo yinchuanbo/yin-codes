@@ -1,0 +1,170 @@
+:root {
+  --bg-color: rgb(23, 23, 23);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /* padding: 10px; */
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(67, 117, 134);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  position: relative;
+background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+/* .wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: -50px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  right: -50px;
+  background-color: #fff;
+  border-radius: 100%;
+} */
+
+.wrapper__main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* .wrapper__main::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  left: -50px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.wrapper__main::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  right: -50px;
+  background-color: #fff;
+  border-radius: 100%;
+} */
+
+.wrapper__main_layout {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* .wrapper__main_layout::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.wrapper__main_layout::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #fff;
+  border-radius: 100%;
+} */
+
+.wrapper__main_layout-content {
+  width: 100%;
+  height: 100%;
+  /* overflow: auto; */
+  /* margin-top: 25px; */
+}
+
+.wrapper__main_layout-content ul {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-content: flex-start;
+  gap: 10px;
+}
+
+.wrapper__main_layout-content ul li {
+  height: 150px;
+  list-style: none;
+  /* border: 1px solid rgb(43, 43, 43); */
+  transition: 0.5s;
+  /* border-radius: 100%; */
+  overflow: hidden;
+}
+
+.wrapper__main_layout-content ul li:hover a {
+  background-color: rgba(63, 242, 63, 1);
+  transition: 0.5s;
+}
+
+.wrapper__main_layout-content ul li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "JetBrains Mono";
+  background-color: rgba(0, 0, 0, 0.7);
+  /* border-radius: 20px; */
+  color: #fff;
+  padding: 0 20px;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}

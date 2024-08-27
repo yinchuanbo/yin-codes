@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 常见问题处理</title>
+    <link rel="shortcut icon" href="code.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/edit.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__main">
+        <div class="wrapper__main_layout">
+          <div class="wrapper__main_layout-content">
+            <div class="wrapper-left">
+              <div class="wrapper-left_bar">
+                <div class="wrapper-left_bar-home" onclick="location.href='/'">
+                  <svg
+                    t="1724509753486"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="13815"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M579.264 106.88l394.986667 353.557333a21.205333 21.205333 0 0 1-14.144 37.034667h-78.933334v356.330667A84.864 84.864 0 0 1 796.309333 938.666667H249.024a84.864 84.864 0 0 1-84.864-84.864V497.472h-78.933333a21.205333 21.205333 0 0 1-14.144-37.034667L466.069333 106.88a84.864 84.864 0 0 1 113.194667 0z m-77.824 87.637333l-247.658667 221.653334v413.034666c0 11.733333 9.514667 21.226667 21.226667 21.226667h495.317333c11.733333 0 21.226667-9.514667 21.226667-21.226667V416.149333l-247.68-221.653333a31.829333 31.829333 0 0 0-42.432 0z m156.373333 479.424a44.117333 44.117333 0 0 1 0 88.234667h-270.293333a44.117333 44.117333 0 0 1 0-88.234667h270.293333z"
+                      fill="currentColor"
+                      p-id="13816"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div
+                  class="wrapper-left_bar-preview"
+                  onclick="window.open('./articles/12 常见问题处理')"
+                >
+                  <svg
+                    t="1724509963924"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="19549"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M170.666667 640a42.666667 42.666667 0 0 1 42.666666 42.666667v128h128a42.666667 42.666667 0 0 1 0 85.333333H213.333333a85.333333 85.333333 0 0 1-85.333333-85.333333v-128a42.666667 42.666667 0 0 1 42.666667-42.666667z m682.666666 0a42.666667 42.666667 0 0 1 42.666667 42.666667v128a85.333333 85.333333 0 0 1-85.333333 85.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128v-128a42.666667 42.666667 0 0 1 42.666666-42.666667z m-213.333333-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333334v170.666666a85.333333 85.333333 0 0 1-85.333333 85.333334H384a85.333333 85.333333 0 0 1-85.333333-85.333334v-170.666666a85.333333 85.333333 0 0 1 85.333333-85.333334h256z m0 85.333334H384v170.666666h256v-170.666666z m170.666667-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333333v128a42.666667 42.666667 0 0 1-85.333333 0V213.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128zM341.333333 128a42.666667 42.666667 0 1 1 0 85.333333H213.333333v128a42.666667 42.666667 0 1 1-85.333333 0V213.333333a85.333333 85.333333 0 0 1 85.333333-85.333333h128z"
+                      fill="currentColor"
+                      p-id="19550"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <ul><li data-id="22" data-path="01 前端字体渲染闪烁问题.md">01 前端字体渲染闪烁问题.md</li></ul>
+            </div>
+            <div class="wrapper-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <pre id="pre" style="display: none">
+      {
+  &#34;01 前端字体渲染闪烁问题.md&#34;: &#34;&lt;h1&gt;前端字体渲染闪烁？来试试预加载&lt;/h1&gt;\n&lt;h2&gt;闪烁问题原因？&lt;/h2&gt;\n&lt;p&gt;其实这里背后的原因 很简单就是，我们没有提前加载字体包，导致进入页面使用到了字体然后进行网络请求，但由于网络请求需要一段时间向服务端获取资源，这段时间前端页面会使用默认字体，此时从默认字体转化为请求的字体就出现闪烁。&lt;/p&gt;\n&lt;img src=\&#34;../imgs/12/08.webp\&#34; /&gt;\n\n&lt;h2&gt;使用 css 发送网络请求加载字体&lt;/h2&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-css\&#34;&gt;@font-face {\n  font-family: &amp;quot;JD-UDC-Bold&amp;quot;;\n  font-display: swap;\n  src: url(&amp;quot;./JD-UDC-Bold.otf&amp;quot;);\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2&gt;font-display 可选参数&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;font-display: auto;&lt;/li&gt;\n&lt;li&gt;font-display: block;&lt;/li&gt;\n&lt;li&gt;font-display: swap;&lt;/li&gt;\n&lt;li&gt;font-display: fallback;&lt;/li&gt;\n&lt;li&gt;font-display: optional;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;属性值&lt;/th&gt;\n&lt;th&gt;描述&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;&lt;tr&gt;\n&lt;td&gt;auto&lt;/td&gt;\n&lt;td&gt;默认值。浏览器根据情况决定如何处理字体显示。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;block&lt;/td&gt;\n&lt;td&gt;在字体加载完成之前，使用占位符进行显示，避免文本闪现或导致布局变化。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;swap&lt;/td&gt;\n&lt;td&gt;在字体加载完成之前，&lt;strong&gt;使用与自定义字体相似的系统默认字体进行显示&lt;/strong&gt;，保持整体布局的稳定性。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;fallback&lt;/td&gt;\n&lt;td&gt;在字体加载完成之前，使用与自定义字体相似的系统默认字体进行显示，并在加载完成后切换为自定义字体。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;optional&lt;/td&gt;\n&lt;td&gt;优先显示系统默认字体，在自定义字体在加载期间可用时切换为自定义字体。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;&lt;/table&gt;\n&lt;h2&gt;如何解决  ？&lt;/h2&gt;\n&lt;p&gt;在下给大家提供两种方案&lt;/p&gt;\n&lt;h3&gt;1：使用 JS  预加载字体包&lt;/h3&gt;\n&lt;p&gt;此方案也是当前生产上正在使用的方式，使用 JS 提供的内置 API &lt;code&gt;FontFace&lt;/code&gt;  进行请求&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;async loadFund () { \n    const fontList = [&amp;#39;JR-UDC-Bold.otf&amp;#39; , &amp;#39;JR-UDC-Light.otf&amp;#39;] // 定义字体文件名称\n    for(const fontResolveUrL of fontList){ // 循环字体文件名称\n        if(typeof FontFace !==  &amp;#39;undefined&amp;#39;){ // 适配低版本 不支持 FontFace 的情况\n            const fontInstance = new FontFace(fontResolveUrL.replace(/.otf/ , &amp;#39;&amp;#39;) , `url(../fonts/${fontResolveUrL})`) // 如果浏览器支持 FontFace 则创建实例\n            await fontInstance.load() // 开始加载字体\n        }else{\n            // 不兼容 可以手动发送一个 get请求 请求服务器资源\n        }\n    }\n}\nsetTimeout(loadFund , 500)// 使用 异步加载不要影响页面的FCP\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;以上代码主要的逻辑时以下几点:&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;&lt;p&gt;定义异步函数&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;循环加载字体&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;判断浏览器是否支持 FontFace，不支持可以走 else 手动获取服务器资源&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ol&gt;\n&lt;p&gt;当你使用 FontFace 对象加载的时候，其实内部帮你发送网络请求，获取服务器资源。&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;FontFace  的参数&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;new FontFace(&amp;#39;字体名称&amp;#39;, &amp;#39;字体资源路径&amp;#39;, &amp;#39;选项描述&amp;#39;)&lt;/code&gt; ，详细信息你可以参考&lt;a href=\&#34;https://developer.mozilla.org/en-US/docs/Web/API/FontFace/FontFace\&#34;&gt;FontFace MDN&lt;/a&gt;&lt;/p&gt;\n&lt;h3&gt;2：使用 css 加载字体包&lt;/h3&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-css\&#34;&gt;@font-face {\n    font-family: &amp;#39;MyFont&amp;#39;;\n    src: url(&amp;#39;path/to/your/font.woff2&amp;#39;) format(&amp;#39;woff2&amp;#39;), \n    url(&amp;#39;path/to/your/font.woff&amp;#39;) format(&amp;#39;woff&amp;#39;), \n    url(&amp;#39;path/to/your/font.ttf&amp;#39;) format(&amp;#39;truetype&amp;#39;); \n    font-weight: normal; font-style: normal; \n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2&gt;总结&lt;/h2&gt;\n&lt;p&gt;闪烁的问题来源于字体没有被加载，当被加载之后 css 渲染解析时，可以直接获取到资源，无需等待网络请求缓冲过程。&lt;/p&gt;\n&#34;
+}</pre
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+    <script src="./js/edit.js"></script>
+  </body>
+</html>

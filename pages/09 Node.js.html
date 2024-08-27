@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>09 Node.js</title>
+    <link rel="shortcut icon" href="code.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/edit.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__main">
+        <div class="wrapper__main_layout">
+          <div class="wrapper__main_layout-content">
+            <div class="wrapper-left">
+              <div class="wrapper-left_bar">
+                <div class="wrapper-left_bar-home" onclick="location.href='/'">
+                  <svg
+                    t="1724509753486"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="13815"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M579.264 106.88l394.986667 353.557333a21.205333 21.205333 0 0 1-14.144 37.034667h-78.933334v356.330667A84.864 84.864 0 0 1 796.309333 938.666667H249.024a84.864 84.864 0 0 1-84.864-84.864V497.472h-78.933333a21.205333 21.205333 0 0 1-14.144-37.034667L466.069333 106.88a84.864 84.864 0 0 1 113.194667 0z m-77.824 87.637333l-247.658667 221.653334v413.034666c0 11.733333 9.514667 21.226667 21.226667 21.226667h495.317333c11.733333 0 21.226667-9.514667 21.226667-21.226667V416.149333l-247.68-221.653333a31.829333 31.829333 0 0 0-42.432 0z m156.373333 479.424a44.117333 44.117333 0 0 1 0 88.234667h-270.293333a44.117333 44.117333 0 0 1 0-88.234667h270.293333z"
+                      fill="currentColor"
+                      p-id="13816"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div
+                  class="wrapper-left_bar-preview"
+                  onclick="window.open('./articles/09 Node.js')"
+                >
+                  <svg
+                    t="1724509963924"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="19549"
+                    width="200"
+                    height="200"
+                  >
+                    <path
+                      d="M170.666667 640a42.666667 42.666667 0 0 1 42.666666 42.666667v128h128a42.666667 42.666667 0 0 1 0 85.333333H213.333333a85.333333 85.333333 0 0 1-85.333333-85.333333v-128a42.666667 42.666667 0 0 1 42.666667-42.666667z m682.666666 0a42.666667 42.666667 0 0 1 42.666667 42.666667v128a85.333333 85.333333 0 0 1-85.333333 85.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128v-128a42.666667 42.666667 0 0 1 42.666666-42.666667z m-213.333333-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333334v170.666666a85.333333 85.333333 0 0 1-85.333333 85.333334H384a85.333333 85.333333 0 0 1-85.333333-85.333334v-170.666666a85.333333 85.333333 0 0 1 85.333333-85.333334h256z m0 85.333334H384v170.666666h256v-170.666666z m170.666667-298.666667a85.333333 85.333333 0 0 1 85.333333 85.333333v128a42.666667 42.666667 0 0 1-85.333333 0V213.333333h-128a42.666667 42.666667 0 0 1 0-85.333333h128zM341.333333 128a42.666667 42.666667 0 1 1 0 85.333333H213.333333v128a42.666667 42.666667 0 1 1-85.333333 0V213.333333a85.333333 85.333333 0 0 1 85.333333-85.333333h128z"
+                      fill="currentColor"
+                      p-id="19550"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <ul><li data-id="19" data-path="01 NodeJS 全栈之视频通话.md">01 NodeJS 全栈之视频通话.md</li></ul>
+            </div>
+            <div class="wrapper-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <pre id="pre" style="display: none">
+      {
+  &#34;01 NodeJS 全栈之视频通话.md&#34;: &#34;&lt;h1&gt;NodeJS 全栈之视频通话&lt;/h1&gt;\n&lt;p&gt;WebRTC（Web 实时通信）是一种使 Web 应用程序和站点能够捕获和选择性地流式传输音频或视频媒体，以及在浏览器之间交换任意数据的而无需中间件的技术。WebRTC 的一系列标准使得在不需要用户安装插件或任何其他第三方软件的情况下，可以实现点对点数据共享和电话会议。&lt;/p&gt;\n&lt;p&gt;WebRTC 提供了大量的 API，这对于我们在日常开发中方便使用，在此简单阐述它的基本使用：&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;// 创建数据源\nconst localStream = await navigator.mediaDevices.getUserMedia({\n  video: true,\n  audio: true,\n});\n// 显示数据源，localVideo 是 html 中的 video 标签\nlocalVideo.srcObject = localStream;\n&lt;/code&gt;&lt;/pre&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;//创建连接\nconst pc1 = new RTCPeerConnection();\n&lt;/code&gt;&lt;/pre&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;//调用监控\nstream = await navigator.mediaDevices.getUserMedia({\n  video: true,\n  audio: true,\n});\n&lt;/code&gt;&lt;/pre&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;//将媒体轨道添加到轨道集\nstream.getTracks().forEach((track) =&amp;gt; {\n  peer.addTrack(track, stream);\n});\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;WebRTC 的使用过程还是遵循 WebSocket 的传输逻辑，只是在此基础上新增许多属性，更多 API 可以去官网或 MDN 去查询，接下来我们以实际 demo 展示其效果，源码如下：&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;index.html&lt;/strong&gt;&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-html\&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;\n&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;\n  &amp;lt;head&amp;gt;\n    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;\n    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt;\n    &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot; /&amp;gt;\n    &amp;lt;title&amp;gt;p2p webrtc&amp;lt;/title&amp;gt;\n    &amp;lt;style&amp;gt;\n      body {\n        background-color: aliceblue;\n      }\n      .title {\n        text-align: center;\n        margin: 50px 0;\n      }\n      .container {\n        width: 500px;\n        margin: 100px auto;\n        padding: 30px;\n        border-radius: 10px;\n        border: 1px solid #ebeef5;\n        box-shadow: 0 2px 12px 0 rgba(142, 131, 248, 0.8);\n        color: #303133;\n      }\n      @media screen and (max-width: 1000px) {\n        .container {\n          width: 70vw;\n        }\n      }\n      ol li {\n        margin: 20px 0;\n      }\n    &amp;lt;/style&amp;gt;\n  &amp;lt;/head&amp;gt;\n  &amp;lt;body&amp;gt;\n    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n      &amp;lt;h1 class=&amp;quot;title&amp;quot;&amp;gt;操作流程&amp;lt;/h1&amp;gt;\n      &amp;lt;ol&amp;gt;\n        &amp;lt;li&amp;gt;\n          打开 &amp;lt;a href=&amp;quot;/p2p?type=answer&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;接收方页面&amp;lt;/a&amp;gt;；\n        &amp;lt;/li&amp;gt;\n        &amp;lt;li&amp;gt;打开 &amp;lt;a href=&amp;quot;/p2p?type=offer&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;发起方页面&amp;lt;/a&amp;gt;；&amp;lt;/li&amp;gt;\n        &amp;lt;li&amp;gt;确认双方都已建立ws连接；&amp;lt;/li&amp;gt;\n        &amp;lt;li&amp;gt;发起方点击 start 按钮。&amp;lt;/li&amp;gt;\n      &amp;lt;/ol&amp;gt;\n    &amp;lt;/div&amp;gt;\n  &amp;lt;/body&amp;gt;\n&amp;lt;/html&amp;gt;\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;&lt;strong&gt;p2p.html&lt;/strong&gt;&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-html\&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;\n&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;\n  &amp;lt;head&amp;gt;\n    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;\n    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt;\n    &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot; /&amp;gt;\n    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;\n    &amp;lt;style&amp;gt;\n      * {\n        padding: 0;\n        margin: 0;\n        box-sizing: border-box;\n      }\n      body {\n        background-color: aliceblue;\n      }\n      .container {\n        width: 100%;\n        display: flex;\n        display: -webkit-flex;\n        justify-content: space-around;\n        padding-top: 20px;\n      }\n      .video-box {\n        position: relative;\n        width: 800px;\n        height: 800px;\n      }\n      #remote-video {\n        width: 100%;\n        height: 100%;\n        display: block;\n        object-fit: cover;\n        border: 1px solid #eee;\n        background-color: #f2f6fc;\n      }\n      #local-video {\n        position: absolute;\n        right: 0;\n        bottom: 0;\n        width: 240px;\n        height: 120px;\n        object-fit: cover;\n        border: 1px solid #eee;\n        background-color: #ebeef5;\n      }\n      .start-button {\n        position: absolute;\n        left: 50%;\n        top: 50%;\n        width: 100px;\n        display: none;\n        line-height: 40px;\n        outline: none;\n        color: #fff;\n        background-color: #409eff;\n        border: none;\n        border-radius: 4px;\n        cursor: pointer;\n        transform: translate(-50%, -50%);\n      }\n      .logger {\n        width: 40%;\n        padding: 14px;\n        line-height: 1.5;\n        color: #4fbf40;\n        border-radius: 6px;\n        background-color: #272727;\n      }\n      .logger .error {\n        color: #dd4a68;\n      }\n    &amp;lt;/style&amp;gt;\n  &amp;lt;/head&amp;gt;\n  &amp;lt;body&amp;gt;\n    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;video-box&amp;quot;&amp;gt;\n        &amp;lt;video id=&amp;quot;remote-video&amp;quot;&amp;gt;&amp;lt;/video&amp;gt;\n        &amp;lt;video id=&amp;quot;local-video&amp;quot; muted&amp;gt;&amp;lt;/video&amp;gt;\n        &amp;lt;button class=&amp;quot;start-button&amp;quot; onclick=&amp;quot;startLive()&amp;quot;&amp;gt;start&amp;lt;/button&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;logger&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;\n    &amp;lt;/div&amp;gt;\n    &amp;lt;script&amp;gt;\n      const message = {\n        el: document.querySelector(&amp;quot;.logger&amp;quot;),\n        log(msg) {\n          this.el.innerHTML += `&amp;lt;span&amp;gt;${new Date().toLocaleTimeString()}：${msg}&amp;lt;/span&amp;gt;&amp;lt;br/&amp;gt;`;\n        },\n        error(msg) {\n          this.el.innerHTML += `&amp;lt;span class=&amp;quot;error&amp;quot;&amp;gt;${new Date().toLocaleTimeString()}：${msg}&amp;lt;/span&amp;gt;&amp;lt;br/&amp;gt;`;\n        },\n      };\n\n      const target = location.search.slice(6);\n      const localVideo = document.querySelector(&amp;quot;#local-video&amp;quot;);\n      const remoteVideo = document.querySelector(&amp;quot;#remote-video&amp;quot;);\n      const button = document.querySelector(&amp;quot;.start-button&amp;quot;);\n\n      localVideo.onloadeddata = () =&amp;gt; {\n        message.log(&amp;quot;播放本地视频&amp;quot;);\n        localVideo.play();\n      };\n      remoteVideo.onloadeddata = () =&amp;gt; {\n        message.log(&amp;quot;播放对方视频&amp;quot;);\n        remoteVideo.play();\n      };\n\n      document.title = target === &amp;quot;offer&amp;quot; ? &amp;quot;发起方&amp;quot; : &amp;quot;接收方&amp;quot;;\n\n      message.log(&amp;quot;信令通道（WebSocket）创建中......&amp;quot;);\n      const socket = new WebSocket(&amp;quot;ws://localhost:8000&amp;quot;);\n      socket.onopen = () =&amp;gt; {\n        message.log(&amp;quot;信令通道创建成功！&amp;quot;);\n        target === &amp;quot;offer&amp;quot; &amp;amp;&amp;amp; (button.style.display = &amp;quot;block&amp;quot;);\n      };\n      socket.onerror = () =&amp;gt; message.error(&amp;quot;信令通道创建失败！&amp;quot;);\n      socket.onmessage = (e) =&amp;gt; {\n        const { type, sdp, iceCandidate } = JSON.parse(e.data);\n        if (type === &amp;quot;answer&amp;quot;) {\n          peer.setRemoteDescription(new RTCSessionDescription({ type, sdp }));\n        } else if (type === &amp;quot;answer_ice&amp;quot;) {\n          peer.addIceCandidate(iceCandidate);\n        } else if (type === &amp;quot;offer&amp;quot;) {\n          startLive(new RTCSessionDescription({ type, sdp }));\n        } else if (type === &amp;quot;offer_ice&amp;quot;) {\n          peer.addIceCandidate(iceCandidate);\n        }\n      };\n\n      const PeerConnection =\n        window.RTCPeerConnection ||\n        window.mozRTCPeerConnection ||\n        window.webkitRTCPeerConnection;\n      !PeerConnection &amp;amp;&amp;amp; message.error(&amp;quot;浏览器不支持WebRTC！&amp;quot;);\n      const peer = new PeerConnection();\n\n      peer.ontrack = (e) =&amp;gt; {\n        if (e &amp;amp;&amp;amp; e.streams) {\n          message.log(&amp;quot;收到对方音频/视频流数据...&amp;quot;);\n          remoteVideo.srcObject = e.streams[0];\n        }\n      };\n\n      peer.onicecandidate = (e) =&amp;gt; {\n        if (e.candidate) {\n          message.log(&amp;quot;搜集并发送候选人&amp;quot;);\n          socket.send(\n            JSON.stringify({\n              type: `${target}_ice`,\n              iceCandidate: e.candidate,\n            })\n          );\n        } else {\n          message.log(&amp;quot;候选人收集完成！&amp;quot;);\n        }\n      };\n\n      async function startLive(offerSdp) {\n        target === &amp;quot;offer&amp;quot; &amp;amp;&amp;amp; (button.style.display = &amp;quot;none&amp;quot;);\n        let stream;\n        try {\n          message.log(&amp;quot;尝试调取本地摄像头/麦克风&amp;quot;);\n          stream = await navigator.mediaDevices.getUserMedia({\n            video: true,\n            audio: true,\n          });\n          message.log(&amp;quot;摄像头/麦克风获取成功！&amp;quot;);\n          localVideo.srcObject = stream;\n        } catch {\n          message.error(&amp;quot;摄像头/麦克风获取失败！&amp;quot;);\n          return;\n        }\n\n        message.log(\n          `------ WebRTC ${\n            target === &amp;quot;offer&amp;quot; ? &amp;quot;发起方&amp;quot; : &amp;quot;接收方&amp;quot;\n          }流程开始 ------`\n        );\n        message.log(&amp;quot;将媒体轨道添加到轨道集&amp;quot;);\n        stream.getTracks().forEach((track) =&amp;gt; {\n          peer.addTrack(track, stream);\n        });\n\n        if (!offerSdp) {\n          message.log(&amp;quot;创建本地SDP&amp;quot;);\n          const offer = await peer.createOffer();\n          await peer.setLocalDescription(offer);\n\n          message.log(`传输发起方本地SDP`);\n          socket.send(JSON.stringify(offer));\n        } else {\n          message.log(&amp;quot;接收到发送方SDP&amp;quot;);\n          await peer.setRemoteDescription(offerSdp);\n\n          message.log(&amp;quot;创建接收方（应答）SDP&amp;quot;);\n          const answer = await peer.createAnswer();\n          message.log(`传输接收方（应答）SDP`);\n          socket.send(JSON.stringify(answer));\n          await peer.setLocalDescription(answer);\n        }\n      }\n    &amp;lt;/script&amp;gt;\n  &amp;lt;/body&amp;gt;\n&amp;lt;/html&amp;gt;\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;&lt;strong&gt;服务端：app.js&lt;/strong&gt;&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-js\&#34;&gt;const app = require(&amp;quot;express&amp;quot;)();\nconst wsInstance = require(&amp;quot;express-ws&amp;quot;)(app);\n\napp.ws(&amp;quot;/&amp;quot;, (ws) =&amp;gt; {\n  ws.on(&amp;quot;message&amp;quot;, (data) =&amp;gt; {\n    // 未做业务处理，收到消息后直接广播\n    wsInstance.getWss().clients.forEach((server) =&amp;gt; {\n      if (server !== ws) {\n        server.send(data);\n      }\n    });\n  });\n});\n\napp.get(&amp;quot;/&amp;quot;, (req, res) =&amp;gt; {\n  res.sendFile(&amp;quot;./client/index.html&amp;quot;, { root: __dirname });\n});\n\napp.get(&amp;quot;/p2p&amp;quot;, (req, res) =&amp;gt; {\n  res.sendFile(&amp;quot;./client/p2p.html&amp;quot;, { root: __dirname });\n});\n\napp.listen(8000);\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;如何使用：启动服务(node app)，访问 localhost:8000 即可&lt;/p&gt;\n&lt;p&gt;注意，此处只是 demo，适合本地运行，如果你想远程使用，建议部署至服务器。&lt;/p&gt;\n&lt;p&gt;效果图：&lt;/p&gt;\n&lt;img src=\&#34;../imgs/10/01.webp\&#34; /&gt;\n&#34;
+}</pre
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+    <script src="./js/edit.js"></script>
+  </body>
+</html>
