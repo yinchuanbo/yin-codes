@@ -143,7 +143,7 @@ body {
   overflow-y: auto;
   position: relative;
   padding-top: 40px;
-  background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+  background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
 }
 
 .wrapper-content {
@@ -154,7 +154,7 @@ body {
   /* margin-left: 10px; */
   margin-left: 10px;
   overflow: hidden;
-  background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+  background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
 }
 
 .wrapper-left li {
